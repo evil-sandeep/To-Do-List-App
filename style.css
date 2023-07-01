@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.box {
+    position: relative;
+    width: 700px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 0px 30px rgb(245, 30, 242);
+    overflow: hidden;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 10px;
+  }
+  
+  footer::before {
+   
+    margin-right: 5px;
+  }
+  
+#item{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 0px;
+    outline: 0;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    animation-name: light-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  
+}
+
+
+
+  
+  @keyframes light-animation {
+    0% {
+      box-shadow: 0px 0px 30px rgb(245, 30, 242);
+      
+    }
+    20% {
+      box-shadow: 0px 0px 30px rgb(248, 45, 45);
+      
+    }
+    40% {
+      box-shadow: 0px 0px 30px rgb(248, 241, 45);
+      
+    }
+    50% {
+      box-shadow: 0px 0px 30px rgb(49, 39, 39);
+      
+    }
+    70% {
+      box-shadow: 0px 0px 30px rgb(34, 38, 249);
+      
+    }
+    85% {
+      box-shadow: 0px 0px 30px rgb(70, 251, 206);
+      
+    }
+    100% {
+      box-shadow: 0px 0px 20px rgb(30, 242, 73);
+      /* transform: rotate(360deg); */
+    }
+  }
+  
+
+#to-do-box{
+    list-style: none; 
+    margin-top: 20px;
+}
+#to-do-box li{
+    position: relative;
+    background-color: rgb(90, 88, 88);
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    padding-right: 30px;
+    text-align:justify;
+    margin-top: 10px;
+user-select: none;
+}
+#to-do-box li i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.done{
+    text-decoration:line-through ;
+    color: black;
+    background-color: #95a5a6 !important;
+}
